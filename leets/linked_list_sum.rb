@@ -10,5 +10,6 @@
 # @param {ListNode} l2
 # @return {ListNode}
 def add_two_numbers(l1, l2)
+    dummy_head = new ListNode(0)
     
 end
