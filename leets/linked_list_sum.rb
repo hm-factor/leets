@@ -10,13 +10,13 @@
 # @param {ListNode} l2
 # @return {ListNode}
 def add_two_numbers(l1, l2)
-    dummy_head = new ListNode(0)
+
     carry = 0
     curr_node_1 = l1.val
     curr_node_2 = l2.val
     storage = []
 
-    while curr_node_1.val || curr_node_2.val do
+    while curr_node_1 || curr_node_2 || carry == 1 do
         num = curr_node_1 + curr_node_2 + carry
         if num > 9 do
             carry = 1
@@ -29,6 +29,7 @@ def add_two_numbers(l1, l2)
         curr_node_2 = l2.next
     end
 
+    storage
 
 
 end
