@@ -8,3 +8,5 @@ var plusOne = function (digits) {
   let newDig = String(bigNum).split('');
   return newDig;
 };
+
+// falls apart for large arrays for some reason -- maybe an issue with parseInt or join?
