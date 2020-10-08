@@ -7,3 +7,4 @@ a place for all things ds&a -- straight from leet
 - linked list sum: https://leetcode.com/problems/add-two-numbers/
 - binary add: https://leetcode.com/problems/add-binary/
 - plus one: https://leetcode.com/problems/plus-one/
+- merge linked lists: https://leetcode.com/problems/merge-two-sorted-lists/
