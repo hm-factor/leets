@@ -8,3 +8,4 @@ a place for all things ds&a -- straight from leet
 - binary add: https://leetcode.com/problems/add-binary/
 - plus one: https://leetcode.com/problems/plus-one/
 - merge linked lists: https://leetcode.com/problems/merge-two-sorted-lists/
+- merge arrays: https://leetcode.com/problems/merge-sorted-array/
