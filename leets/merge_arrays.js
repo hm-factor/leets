@@ -7,14 +7,17 @@
  */
 var merge = function (nums1, m, nums2, n) {
   let i = 0;
-  while (nums2.length) {
+  while (i < nums1.length) {
     if (nums1[i] >= nums2[0]) {
       nums1.splice(i, 0, nums2[0]);
       nums2.shift();
-    }
+      nums1.pop();
+    };
 
     i++;
-  }
+  };
 
-  return nums1
+  nums1 = nums1.concat(nums2)
+
+  return nums1;
 };
