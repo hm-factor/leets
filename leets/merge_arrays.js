@@ -39,7 +39,7 @@ var merge = function (nums1, m, nums2, n) {
 };
 
 
-// better solution
+// better solution: better 'in-place-ness'
 
 let merge = function (nums1, m, nums2, n) {
   let first = m - 1;
