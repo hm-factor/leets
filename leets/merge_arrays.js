@@ -6,6 +6,18 @@
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
 var merge = function (nums1, m, nums2, n) {
+  if (m === 0) {
+    return nums2;
+  } else if (n === 0) {
+    return nums1;
+  };
+
+  if (nums1[0] === 0 && m === 1) {
+    return nums2;
+  } else if (nums2[0] === 0 && n === 1) {
+    return nums2;
+  };
+  
   let i = 0;
   while (nums2.length > 0) {
 
