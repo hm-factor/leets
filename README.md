@@ -9,3 +9,4 @@ a place for all things ds&a -- straight from leet
 - plus one: https://leetcode.com/problems/plus-one/
 - merge linked lists: https://leetcode.com/problems/merge-two-sorted-lists/
 - merge arrays: https://leetcode.com/problems/merge-sorted-array/
+- remove dups from sorted array: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
