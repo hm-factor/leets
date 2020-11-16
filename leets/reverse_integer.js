@@ -20,17 +20,19 @@ var reverse = function(x) {
     }
     
     let reverseStr = newArr.join("")
+
+    let newAnswer = 0;
     
     if(neg) {
         let posInt = parseInt(reverseStr);
-        let answer = -1*posInt;
+        newAnswer = -1*posInt;
     } else {
-        let answer = parseInt(reverseStr);
+        newAnswer = parseInt(reverseStr);
     }
 
-    if(answer < ((-2)**31) || answer > 2**31) {
+    if(newAnswer < ((-2)**31) || newAnswer > 2**31) {
       return 0
     } else {
-      return answer
+      return newAnswer
     };
 };
