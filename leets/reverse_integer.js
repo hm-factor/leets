@@ -23,8 +23,14 @@ var reverse = function(x) {
     
     if(neg) {
         let posInt = parseInt(reverseStr);
-        return -1*posInt
+        let answer = -1*posInt;
     } else {
-        return parseInt(reverseStr);
+        let answer = parseInt(reverseStr);
     }
+
+    if(answer < ((-2)**31) || answer > 2**31) {
+      return 0
+    } else {
+      return answer
+    };
 };
