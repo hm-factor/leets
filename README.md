@@ -12,3 +12,4 @@ a place for all things ds&a -- straight from leet
 - remove dups from sorted array: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 - reverse integer: https://leetcode.com/problems/reverse-integer/
 - reverse bit: https://leetcode.com/problems/reverse-bits/
+- longest substring: https://leetcode.com/problems/longest-substring-without-repeating-characters/
