@@ -13,7 +13,6 @@ var lengthOfLongestSubstring = function(s) {
         sub = Math.max(sub, i - min);
         min = (store[s[i]] > min) ? i : min;
         store[s[i]] = i;
-        console.log(store, min, sub)
     }
     
     return sub
