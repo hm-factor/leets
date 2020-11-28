@@ -8,7 +8,7 @@ var convert = function(s, numRows) {
     let arr = new Array(numRows);
     let count = 0;
     
-    for(let i = 0; i < s.length; i++;) {
+    for(let i = 0; i < s.length; i++) {
         let idx = i % numRows;
         if (arr[idx] === undefined) {
             arr[idx] += ""

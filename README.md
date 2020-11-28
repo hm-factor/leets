@@ -13,3 +13,4 @@ a place for all things ds&a -- straight from leet
 - reverse integer: https://leetcode.com/problems/reverse-integer/
 - reverse bit: https://leetcode.com/problems/reverse-bits/
 - longest substring: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+- zigzag-conversion: https://leetcode.com/problems/zigzag-conversion/ 

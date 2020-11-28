@@ -3,17 +3,19 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    if (s.length <= 1) return s.length
+
+    if (s.length <= 1) return s.length;
     
     let store = {}
-    let min = -1
+    let min = 0
     let sub = 0
     
     for (let [i] in s) {
-        sub = Math.max(sub, i - min);
-        min = (store[s[i]] > min) ? i : min;
+        let idx = parseInt(i)
+        sub = Math.max(sub, idx - min);
+        min = (store[s[i]] >= min) ? idx : min;
         store[s[i]] = i;
     }
     
-    return sub
+    return sub;
 };
