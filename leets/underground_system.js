@@ -13,10 +13,12 @@ var UndergroundSystem = function() {
  * @return {void}
  */
 UndergroundSystem.prototype.checkIn = function(id, stationName, t) {
-  this.checkIns[id] = [stationName, t];
-  if (!this.travelTime[stationName]){
-    this.travelTime[stationName] = {};
-  }
+    if(!this.checkIns[id]) {
+        this.checkIns[id] = [stationName, t];
+        if (!this.travelTime[stationName]){
+            this.travelTime[stationName] = {};
+        }
+    } else return null
 };
 
 /** 
