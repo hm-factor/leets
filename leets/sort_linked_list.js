@@ -13,9 +13,9 @@ var sortList = function(head) {
     if (head === null || head.next === null) return head;
     
 //     here I split the link into halves
-    let mid = findMid(head);
-    let left = new ListNode(head);
-    let right = new ListNode(mid);
+    let midNode = findMid(head);
+    let left = sortList(head);
+    let right = sortList(midNode);
     return mergeLinks(left, right);
 };
 
@@ -23,7 +23,7 @@ function mergeLinks (l1, l2) {
     let dummy = new ListNode();
     let head = dummy;
     
-    while(l1 && l2) {
+    while((l1 !== null) && (l2 !== null)) {
         if (l1.val < l2.val) {
             head.next = l1;
             l1 = l1.next;
@@ -35,11 +35,17 @@ function mergeLinks (l1, l2) {
         }
     }
     
-    head.next = l1 ? l1 : l2;
+    head.next = (l1 !== null) ? l1 : l2;
     return dummy.next
 }
 
 function findMid (head) {
-//     HOW TO SPLIT LINKLIST IN HALF: if you have one pointer move at double speed and one move at single speed,
-//  when the double speed pointer makes its way out of the linked list, the slow pointer will be at half!
+//     HOW TO SPLIT LINKLIST IN HALF: if you have one pointer move at double speed and one move at single speed, when the double speed pointer makes its way out of the linked list, the slow pointer will be at half!
+    
+    let mid = null;
+    while ((head !== null) && (head.next !== null)) {
+        mid = (mid !== null) ? head : head.next;
+        head = head.next.next;
+    }
+    return mid.next
 }
