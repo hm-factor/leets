@@ -21,10 +21,10 @@ function addParens (str, l, r, mySet, n) {
         mySet.add(str);
         return
     }
-    if (l < n && str.length < n*2) {
+    if (l < n) {
         addParens(str + "(", l+1, r, mySet, n);      
     }
-    if (r < l && str.length < n*2) {
+    if (r < l) {
         addParens(str + ")", l, r+1, mySet, n);            
     }
 }
