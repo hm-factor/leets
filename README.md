@@ -17,3 +17,8 @@ a place for all things ds&a -- straight from leet
 - underground-system: https://leetcode.com/problems/design-underground-system/
 - generate-parens: https://leetcode.com/problems/generate-parentheses/
 - sort-list: https://leetcode.com/problems/sort-list/
+
+# PRAMP #
+
+- BST Successor Search
+- Root of number
