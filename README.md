@@ -18,6 +18,11 @@ a place for all things ds&a -- straight from leet
 - generate-parens: https://leetcode.com/problems/generate-parentheses/
 - sort-list: https://leetcode.com/problems/sort-list/
 
+# Python #
+
+ - 1662. Check If Two String Arrays are Equivalent: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
+
+
 # PRAMP #
 
 - BST Successor Search
