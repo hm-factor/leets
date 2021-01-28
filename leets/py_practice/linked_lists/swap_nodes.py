@@ -12,6 +12,12 @@ class Solution(object):
         if head.next is None:
             return head
 
+        if head.next.next is None:
+            temp = head.next
+            head.next = None
+            temp.next = head
+            return temp
+
         temp = head
         result = temp
         while temp.val is not None:
