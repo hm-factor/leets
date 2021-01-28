@@ -9,3 +9,19 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        if head.next is None:
+            return head
+
+        temp = head
+        result = temp
+        while temp.val is not None:
+            # second node becomes new head
+            newHead = temp.next
+            # assign original head the rest of the list
+            others = temp.next.next
+            temp.next = others
+            newHead.next = temp
+
+            temp = temp.next.next
+
+        return result
