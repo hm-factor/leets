@@ -10,11 +10,12 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        temp, temp.next = ListNode(0), head
+        dummy = ListNode(0)
+        temp, temp.next = dummy, head
         while temp.next and temp.next.next:
             a = temp.next
             b = a.next
             temp.next, b.next, a.next = b, a, b.next
             temp = a
 
-        return temp.next
+        return dummy.next
