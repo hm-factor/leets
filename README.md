@@ -28,7 +28,7 @@ a place for all things ds&a -- straight from leet
 
 # PRAMP #
 
-- BST Successor Search
+- BST Successor Search (from root)
 - Root of number
 - Get Different Number
 - Flatten Dictionary
