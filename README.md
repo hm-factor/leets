@@ -32,3 +32,4 @@ a place for all things ds&a -- straight from leet
 - Root of number
 - Get Different Number
 - Flatten Dictionary
+- Array Quadruplet
