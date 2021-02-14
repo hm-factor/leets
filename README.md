@@ -34,3 +34,4 @@ a place for all things ds&a -- straight from leet
 - Flatten Dictionary
 - Array Quadruplet
 - Move Zeros to End
+- Decrypt Message
