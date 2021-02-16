@@ -25,6 +25,10 @@ a place for all things ds&a -- straight from leet
  - 56. Merge Intervals: https://leetcode.com/problems/merge-intervals/
  - 1662. Check If Two String Arrays are Equivalent: https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
 
+ - Hackerrank
+  - Dealing with Complex Numbers
+  - Find the Torsional Angle
+
 
 # PRAMP #
 
