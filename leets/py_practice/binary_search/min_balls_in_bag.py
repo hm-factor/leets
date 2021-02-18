@@ -12,7 +12,6 @@ class Solution(object):
                 left = mid + 1
             else:
                 right = mid
-            print(left, right, mid)
         return left
 
     """
