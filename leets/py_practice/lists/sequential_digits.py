@@ -16,11 +16,10 @@ class Solution:
         out = []
         
         i = len(str(low))
-        while i <= len(nums):
-            for j in range(len(nums)):
-                curr = nums[j+1:i]
-                if low <= int(curr) and int(curr) <= high:
-                    out.append(curr)
-                    low = curr
-                i += 1
-        print(out)
+        for j in range(len(nums)):
+            curr = int(nums[j:i+j])
+            if low <= curr and curr <= high:
+                out.append(curr)
+            else:
+                return out
+        return out
