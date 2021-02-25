@@ -19,7 +19,6 @@ class Solution:
         j = 0
         while j < len(nums):
             curr = int(nums[j:i+j])
-            print(curr)
             if low <= curr and curr <= high:
                 out.append(curr)
             else:
