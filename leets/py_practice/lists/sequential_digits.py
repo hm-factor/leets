@@ -14,16 +14,17 @@ class Solution:
 
         nums = '123456789'
         out = []
-        
+
         i = len(str(low))
         j = 0
         while j < len(nums):
             curr = int(nums[j:i+j])
+            print(curr)
             if low <= curr and curr <= high:
                 out.append(curr)
             else:
                 return out
-            if nums[i+j] == '9':
+            if nums[i+j-1] == '9':
                 j = 0
                 i = len(str(low)) + 1
             else:
