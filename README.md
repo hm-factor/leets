@@ -1,6 +1,8 @@
 # leets
 a place for all things ds&a -- straight from leet
 
+- julia: 
+  - basic.jl
 
 - binary tree depth: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - two sum: https://leetcode.com/problems/two-sum/
