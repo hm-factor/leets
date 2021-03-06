@@ -7,6 +7,7 @@
   6. given an amount of money, return every different ways that can be represented using coins
 """
 
+#1
 def binary_search(nums: list, target: int) -> bool:
   mid = len(nums)//2
 
@@ -21,9 +22,9 @@ def binary_search(nums: list, target: int) -> bool:
   return False
 
 # arr = [1,2,3,4,5,6,7]
-
 # print(binary_search(arr, 4))
 
+#4
 def sum_lines(fname: str) -> dict:
   alph = {chr(x+96):x for x in range(1,27)}
   sum = 0
@@ -37,3 +38,17 @@ def sum_lines(fname: str) -> dict:
   return sum
 
 # print(sum_lines('./file.txt'))
+
+#5
+def word_length(words: list) -> dict:
+  output = dict()
+  for word in words:
+    curr = len(word)
+    if output[curr]:
+      output[curr].append(word)
+    else:
+      output[curr] = [word]
+  return output
+
+arr = ['ok', 'no', 'thanks', 'pants', 'see', 'goodbye']
+print(word_length(arr))
