@@ -24,6 +24,26 @@ def binary_search(nums: list, target: int) -> bool:
 # arr = [1,2,3,4,5,6,7]
 # print(binary_search(arr, 4))
 
+#3
+def alternade(fname: str) -> str:
+  content = None
+  with open(fname) as f:
+    content = f.read().splitlines()
+
+  for word in content:
+    s1 = ""
+    s2 = ""
+    for i in range(len(word)):
+      if i%2 == 1:
+        s1 += word[i]
+      else:
+        s2 += word[i]
+
+    if s1 in content and s2 in content:
+      print(f'\"{word}\": makes \"{s1}\" and \"{s2}\"')
+    
+print(alternade('./words.txt'))
+
 #4
 def sum_lines(fname: str) -> dict:
   alph = {chr(x+96):x for x in range(1,27)}
@@ -50,5 +70,5 @@ def word_length(words: list) -> dict:
       output[curr] = [word]
   return output
 
-arr = ['ok', 'no', 'thanks', 'pants', 'see', 'goodbye']
-print(word_length(arr))
+# arr = ['ok', 'no', 'thanks', 'pants', 'see', 'goodbye']
+# print(word_length(arr))
