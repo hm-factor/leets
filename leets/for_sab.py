@@ -8,18 +8,18 @@
 """
 
 def binary_search(nums: list, target: int) -> bool:
-    mid = len(nums)//2
+  mid = len(nums)//2
 
-    while mid < len(nums):
-        if target < nums[mid]:
-          return binary_search(nums[0:mid], target)
-        elif target > nums[mid]:
-          return binary_search(nums[mid + 1:], target)
-        elif target == nums[mid]:
-          return True
-    
-    return False
+  while mid < len(nums):
+    if target < nums[mid]:
+      return binary_search(nums[0:mid], target)
+    elif target > nums[mid]:
+      return binary_search(nums[mid + 1:], target)
+    elif target == nums[mid]:
+      return True
+  
+  return False
 
-arr = [1,2,3,4,5,6,7,8]
+arr = [1,2,3,4,5,6,7]
 
-print(binary_search(arr, 1))
+print(binary_search(arr, 4))
