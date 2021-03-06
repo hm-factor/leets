@@ -13,7 +13,7 @@ def binary_search(nums: list, target: int) -> bool:
     if target < nums[mid]:
       return binary_search(nums[0:mid], target)
     elif target > nums[mid]:
-      return binary_search(nums[mid + 1:], target):
+      return binary_search(nums[mid + 1:], target)
     elif target == nums[mid]:
       return True
     
