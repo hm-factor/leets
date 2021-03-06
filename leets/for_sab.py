@@ -44,7 +44,7 @@ def word_length(words: list) -> dict:
   output = dict()
   for word in words:
     curr = len(word)
-    if output[curr]:
+    if curr in output:
       output[curr].append(word)
     else:
       output[curr] = [word]
