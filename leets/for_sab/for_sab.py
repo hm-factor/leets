@@ -7,6 +7,28 @@
   6. given an amount of money, return every different ways that can be represented using coins
 """
 
+
+# def binary_search(target, input_list, idx=0):
+#     #     mid is middle idx
+#     mid = len(input_list)//2
+
+#     print(mid, idx, input_list)
+
+#     while mid < len(input_list):
+#         if target > input_list[mid]:
+#             return binary_search(target, input_list[mid+1:len(input_list)], idx + mid)
+#         elif target < input_list[mid]:
+#             return binary_search(target, input_list[0:mid], idx)
+#         elif target == input_list[mid]:
+#             return idx + mid
+
+#     return "Number not in list"
+
+
+# arr = [1, 2, 3, 4, 5, 6, 7]
+# binary_search(3, arr)
+
+
 #1
 def binary_search(nums: list, target: int) -> bool:
   mid = len(nums)//2
@@ -34,7 +56,7 @@ def alternade(fname: str) -> str:
     s1 = ""
     s2 = ""
     for i in range(len(word)):
-      if i%2 == 1:
+      if i%2 == 0:
         s1 += word[i]
       else:
         s2 += word[i]
@@ -60,7 +82,7 @@ def sum_lines(fname: str) -> dict:
 # print(sum_lines('./file.txt'))
 
 #5
-def word_length(words: list) -> dict:
+def word_lengths(words: list) -> dict:
   output = dict()
   for word in words:
     curr = len(word)
