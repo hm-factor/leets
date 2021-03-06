@@ -72,3 +72,11 @@ def word_length(words: list) -> dict:
 
 # arr = ['ok', 'no', 'thanks', 'pants', 'see', 'goodbye']
 # print(word_length(arr))
+
+#6
+def make_change(cents: int, total: int) -> int:
+  '''
+    create tree that goes through every combination of change
+    return 1 if cents achieved, return 0 if sum over cents
+  '''
+  pass
