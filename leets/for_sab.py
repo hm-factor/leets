@@ -7,8 +7,6 @@
   6. given an amount of money, return every different ways that can be represented using coins
 """
 
-import string
-
 def binary_search(nums: list, target: int) -> bool:
   mid = len(nums)//2
 
