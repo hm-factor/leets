@@ -28,6 +28,26 @@
 # arr = [1, 2, 3, 4, 5, 6, 7]
 # binary_search(3, arr)
 
+#1
+def binary_search(target, input_list, idx=0):
+    mid = len(input_list)//2
+
+    if target > input_list[-1]:
+        return "Number not in list"
+
+    while mid < len(input_list):
+        if target > input_list[mid]:
+            return binary_search(target, input_list[mid:len(input_list)], idx + mid)
+        elif target < input_list[mid]:
+            return binary_search(target, input_list[0:mid], idx)
+        elif target == input_list[mid]:
+            return idx + mid
+
+    return "Number not in list"
+
+
+arr = [1, 2, 3, 4, 5, 6, 7]
+binary_search(7, arr)
 
 #1
 def binary_search(nums: list, target: int) -> bool:
