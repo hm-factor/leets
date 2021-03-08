@@ -117,8 +117,19 @@ def word_lengths(words: list) -> dict:
 
 #6
 def make_change(cents: int, total: int) -> int:
+  pass
   '''
     create tree that goes through every combination of change
     return 1 if cents achieved, return 0 if sum over cents
   '''
-  pass
+def make_change(target):
+    coins = [1, 5, 10, 25, 50, 100]
+    ways = [1]+[0]*target
+    for coin in coins:
+        for i in range(coin, target+1):
+            ways[i] += ways[i-coin]
+    print(ways[target])
+
+
+make_change(200)
+
