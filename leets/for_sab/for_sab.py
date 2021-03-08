@@ -45,26 +45,43 @@ def binary_search(target, input_list, idx=0):
 
     return "Number not in list"
 
+# arr = [1, 2, 3, 4, 5, 6, 7]
+# binary_search(7, arr)
 
-arr = [1, 2, 3, 4, 5, 6, 7]
-binary_search(7, arr)
+# def binary_search(nums: list, target: int) -> bool:
+#   mid = len(nums)//2
 
-#1
-def binary_search(nums: list, target: int) -> bool:
-  mid = len(nums)//2
-
-  while mid < len(nums):
-    if target < nums[mid]:
-      return binary_search(nums[0:mid], target)
-    elif target > nums[mid]:
-      return binary_search(nums[mid + 1:], target)
-    elif target == nums[mid]:
-      return True
+#   while mid < len(nums):
+#     if target < nums[mid]:
+#       return binary_search(nums[0:mid], target)
+#     elif target > nums[mid]:
+#       return binary_search(nums[mid + 1:], target)
+#     elif target == nums[mid]:
+#       return True
   
-  return False
+#   return False
 
 # arr = [1,2,3,4,5,6,7]
 # print(binary_search(arr, 4))
+
+def decimal(denom, numerator=1):
+    res = ['0.']
+    repeat = []
+    while numerator != 0:
+        numerator *= 10
+        digit, numerator = divmod(numerator, denom)
+        res.append(str(digit))
+        if str(numerator) not in repeat:
+            repeat.append(str(numerator))
+        else:
+            first = repeat.index(str(numerator)) + 1
+            res.insert(first, '(')
+            res.append(')')
+            break
+    return "".join(res)
+
+
+decimal(3)
 
 #3
 def alternade(fname: str) -> str:
