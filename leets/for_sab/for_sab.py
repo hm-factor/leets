@@ -7,27 +7,6 @@
   6. given an amount of money, return every different ways that can be represented using coins
 """
 
-
-# def binary_search(target, input_list, idx=0):
-#     #     mid is middle idx
-#     mid = len(input_list)//2
-
-#     print(mid, idx, input_list)
-
-#     while mid < len(input_list):
-#         if target > input_list[mid]:
-#             return binary_search(target, input_list[mid+1:len(input_list)], idx + mid)
-#         elif target < input_list[mid]:
-#             return binary_search(target, input_list[0:mid], idx)
-#         elif target == input_list[mid]:
-#             return idx + mid
-
-#     return "Number not in list"
-
-
-# arr = [1, 2, 3, 4, 5, 6, 7]
-# binary_search(3, arr)
-
 #1
 def binary_search(target, input_list, idx=0):
     mid = len(input_list)//2
@@ -48,22 +27,7 @@ def binary_search(target, input_list, idx=0):
 # arr = [1, 2, 3, 4, 5, 6, 7]
 # binary_search(7, arr)
 
-# def binary_search(nums: list, target: int) -> bool:
-#   mid = len(nums)//2
-
-#   while mid < len(nums):
-#     if target < nums[mid]:
-#       return binary_search(nums[0:mid], target)
-#     elif target > nums[mid]:
-#       return binary_search(nums[mid + 1:], target)
-#     elif target == nums[mid]:
-#       return True
-  
-#   return False
-
-# arr = [1,2,3,4,5,6,7]
-# print(binary_search(arr, 4))
-
+#2
 def decimal(denom, numerator=1):
     res = ['0.']
     repeat = []
@@ -80,8 +44,7 @@ def decimal(denom, numerator=1):
             break
     return "".join(res)
 
-
-decimal(3)
+# decimal(3)
 
 #3
 def alternade(fname: str) -> str:
