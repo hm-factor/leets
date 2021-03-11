@@ -64,7 +64,7 @@ def alternade(fname: str) -> str:
     if s1 in content and s2 in content:
       print(f'\"{word}\": makes \"{s1}\" and \"{s2}\"')
     
-print(alternade('./words.txt'))
+# print(alternade('./words.txt'))
 
 #4
 def sum_lines(fname: str) -> dict:
@@ -105,11 +105,12 @@ def make_change(cents: int, total: int) -> int:
 def make_change(target):
     coins = [1, 5, 10, 25, 50, 100]
     ways = [1]+[0]*target
+    # the one way to make 0 change is the initial array added
     for coin in coins:
         for i in range(coin, target+1):
             ways[i] += ways[i-coin]
     print(ways[target])
 
 
-make_change(200)
+# make_change(200)
 
