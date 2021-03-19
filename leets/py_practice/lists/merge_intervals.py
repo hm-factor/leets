@@ -7,11 +7,11 @@ class Solution(object):
 
         intervals.sort(key=lambda x: x[0])
         # nlogn O(n)
-
         arr = []
-
+        # arr =[1,6]
         # linear O(n)
         for item in intervals:
+            # item = [4,6]
             if not arr or arr[-1][1] < item[0]:
                 arr.append(item)
             else:
