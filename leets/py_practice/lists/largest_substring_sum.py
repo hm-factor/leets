@@ -1,23 +1,20 @@
 from typing import List
+import math
 
+# dynamic programming solution
+# keep track of local maxes as you traverse through list 
+# compare to max until through list
+# O(n)
 
 def maxSubArray(self, nums: List[int]) -> int:
-  if len(nums) == 1:
-      return nums[0]
 
-  curr_sum = sum(nums)
-  max_sum = curr_sum
+    n = len(nums)
+    l_max = 0
+    g_max = -math.inf
 
-  while len(nums) > 0:
-      low = nums[0]
-      high = nums[-1]
-      tmp = max(low, high)
+    for i in range(0, n):
+        l_max = max(nums[i], l_max+nums[i])
+        if l_max > g_max:
+            g_max = l_max
 
-      if tmp == low:
-          curr_sum -= high
-          nums = nums[:-1]
-      else:
-          curr_sum -= low
-          nums = nums[1:]
-      max_sum = max(max_sum, curr_sum)
-  return max_sum
+    return g_max
