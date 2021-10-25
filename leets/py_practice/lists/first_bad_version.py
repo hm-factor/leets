@@ -1,4 +1,6 @@
 # isBadVersion is an api that returns boolean for int
+def isBadVersion(self, n: int):
+  return n%2==0
 
 def firstBadVersion(self, n):
     """
