@@ -1,3 +1,5 @@
+
+# nth fib num w memoization using object ds
 def fib(self, n: int) -> int:
     memo = {}
     t = 0
